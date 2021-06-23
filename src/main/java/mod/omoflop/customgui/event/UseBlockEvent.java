@@ -1,5 +1,6 @@
 package mod.omoflop.customgui.event;
 
+import mod.omoflop.customgui.CustomGUIClient;
 import mod.omoflop.customgui.data.OverrideManager;
 import net.fabricmc.fabric.api.event.player.UseBlockCallback;
 import net.minecraft.block.BlockState;
@@ -26,7 +27,9 @@ public class UseBlockEvent implements UseBlockCallback {
             Identifier override = OverrideManager.getContainer(blockState);
 
             if (override != null) OverrideManager.textureOverride = override;
+
         }
+
         return ActionResult.PASS;
     }
 }

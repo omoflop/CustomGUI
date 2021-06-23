@@ -1,6 +1,7 @@
 package mod.omoflop.customgui.util;
 
 import com.google.gson.JsonObject;
+import mod.omoflop.customgui.CustomGUIClient;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.util.Identifier;

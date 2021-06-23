@@ -70,7 +70,6 @@ public class ResourceLoader implements SimpleSynchronousResourceReloadListener {
         if (cguiData.has("rate")) {
             animationRate = cguiData.get("rate").getAsInt();
         }
-        CustomGUIClient.print(animationRate);
 
         JsonArray frameArray = cguiData.getAsJsonArray("frames");
         Identifier[] frames = new Identifier[frameArray.size()];

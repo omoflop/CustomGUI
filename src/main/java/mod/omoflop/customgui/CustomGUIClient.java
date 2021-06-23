@@ -13,7 +13,8 @@ public class CustomGUIClient implements ClientModInitializer {
 		print("[WARN] " + s, args);
 	}
 	public static void print(Object s, Object... args) {
-		System.out.printf("[Custom GUI] %s\n", String.format(s.toString(),args));
+		String _s = (s == null ? "null" : s.toString());
+		System.out.printf("[Custom GUI] %s\n", String.format(_s,args));
 	}
 
 	@Override

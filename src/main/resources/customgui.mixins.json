@@ -6,7 +6,7 @@
   "mixins": [
   ],
   "client": [
-    "TextureManagerMixin"
+    "RenderSystemMixin"
   ],
   "injectors": {
     "defaultRequire": 1

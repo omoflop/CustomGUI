@@ -1,9 +1,11 @@
 package mod.omoflop.customgui.data;
 
+import mod.omoflop.customgui.CustomGUIClient;
 import mod.omoflop.customgui.util.BlockUtils;
 import net.minecraft.block.BlockState;
 import net.minecraft.util.Identifier;
 
+import java.util.Arrays;
 import java.util.HashMap;
 
 public class OverrideManager {
@@ -39,8 +41,13 @@ public class OverrideManager {
         animationOverrides.clear();
     }
 
-    public static void addContainer(SimpleBlockstate state, Identifier id) { containerOverrides.put(state, id);     }
-    public static void addAnimation(Identifier id, GUIAnimation animation) { animationOverrides.put(id, animation); }
+    public static void addContainer(SimpleBlockstate state, Identifier id) {
+        CustomGUIClient.print(id);
+        CustomGUIClient.print("%s: %s", state.block_id, Arrays.toString(state.states));
+        containerOverrides.put(state, id);     }
+    public static void addAnimation(Identifier id, GUIAnimation animation) {
+        CustomGUIClient.print(id);
+        animationOverrides.put(id, animation); }
 
     public static Identifier getContainer(BlockState state) {
         Identifier blockID = BlockUtils.getBlockIdentifier(state.getBlock());
