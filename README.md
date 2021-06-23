@@ -38,8 +38,8 @@
   ```
   {
 	  "cgui": {
-      "type": "container",
-      "block": "minecraft:dropper"
+      		"type": "container",
+      		"block": "minecraft:dropper"
 	  }
   }
   ```
