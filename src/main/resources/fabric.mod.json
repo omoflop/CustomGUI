@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "customgui",
+  "version": "1.0.0",
+
+  "name": "Custom GUI",
+  "description": "Allows users to replace gui textures similarly to Optifine by using resource packs",
+  "authors": [
+    "omoflop"
+  ],
+  "contact": {
+    "homepage": "",
+    "sources": ""
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/customgui/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "mod.omoflop.customgui.CustomGUI"
+    ],
+    "client": [
+      "mod.omoflop.customgui.CustomGUIClient"
+    ]
+  },
+  "mixins": [
+    "customgui.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.11.2",
+    "fabric": "*",
+    "minecraft": "1.16.x",
+    "java": ">=16"
+  }
+}

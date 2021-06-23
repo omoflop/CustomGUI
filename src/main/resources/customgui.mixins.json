@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "mod.omoflop.customgui.mixin",
+  "compatibilityLevel": "JAVA_16",
+  "mixins": [
+  ],
+  "client": [
+    "TextureManagerMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
