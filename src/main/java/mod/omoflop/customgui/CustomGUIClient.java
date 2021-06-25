@@ -5,7 +5,10 @@ import mod.omoflop.customgui.event.UseBlockEvent;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.event.player.UseBlockCallback;
 import net.fabricmc.fabric.api.resource.ResourceManagerHelper;
+import net.minecraft.client.MinecraftClient;
+import net.minecraft.client.util.ChatMessages;
 import net.minecraft.resource.ResourceType;
+import net.minecraft.server.command.SayCommand;
 
 public class CustomGUIClient implements ClientModInitializer {
 
