@@ -19,7 +19,7 @@ public abstract class RenderSystemMixin {
 
     @Inject(method = "setShaderTexture(ILnet/minecraft/util/Identifier;)V", at = @At("HEAD"), cancellable = true)
     private static void setShaderTextureMixin(int i, Identifier id, CallbackInfo ci) {
-
+        
         if (!id.getPath().contains("textures/gui")) return;
         Identifier newID = OverrideManager.getOverride(id);
 
