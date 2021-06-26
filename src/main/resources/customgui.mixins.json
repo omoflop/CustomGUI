@@ -4,10 +4,9 @@
   "package": "mod.omoflop.customgui.mixin",
   "compatibilityLevel": "JAVA_16",
   "mixins": [
-    "RenderSystemMixin"
   ],
   "client": [
-
+    "RenderSystemMixin"
   ],
   "injectors": {
     "defaultRequire": 1

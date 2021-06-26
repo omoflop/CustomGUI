@@ -1,16 +1,16 @@
 {
   "schemaVersion": 1,
   "id": "customgui",
-  "version": "${version}",
+  "version": "1.0.0",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Custom GUI",
+  "description": "Allows users to customise GUIs similarly to optifine",
   "authors": [
-    "Me!"
+    "omoflop"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://github.com/Sconed/CustomGUI/wiki",
+    "sources": "https://github.com/Sconed/CustomGUI"
   },
 
   "license": "CC0-1.0",
@@ -34,8 +34,5 @@
     "fabric": "*",
     "minecraft": "1.17.x",
     "java": ">=16"
-  },
-  "suggests": {
-    "another-mod": "*"
   }
 }
