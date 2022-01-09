@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "customgui",
-  "version": "1.0.0",
+  "version": "1.0.1",
 
   "name": "Custom GUI",
   "description": "Allows users to customise GUIs similarly to optifine",
@@ -15,7 +15,7 @@
 
   "license": "CC0-1.0",
   "icon": "assets/customgui/icon.png",
-
+  "accessWidener": "customgui.accesswidener",
   "environment": "*",
   "entrypoints": {
     "main": [
@@ -32,7 +32,7 @@
   "depends": {
     "fabricloader": ">=0.11.3",
     "fabric": "*",
-    "minecraft": "1.17.x",
+    "minecraft": "1.18.x",
     "java": ">=16"
   }
 }
