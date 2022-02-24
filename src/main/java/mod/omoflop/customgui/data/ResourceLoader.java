@@ -8,8 +8,12 @@ import net.fabricmc.fabric.api.resource.SimpleSynchronousResourceReloadListener;
 import net.minecraft.resource.Resource;
 import net.minecraft.resource.ResourceManager;
 import net.minecraft.util.Identifier;
+import net.minecraft.client.texture.SpriteAtlasTexture;
 import net.minecraft.util.JsonHelper;
 
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.OutputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -60,7 +64,16 @@ public class ResourceLoader implements SimpleSynchronousResourceReloadListener {
             } catch (Exception ex) {
                 CustomGUIClient.warn("Caught exception: %s", ex.toString());
             }
-
+        } 
+        try {
+          InputStream s = manager.getResource(SpriteAtlasTexture.BLOCK_ATLAS_TEXTURE).getInputStream();
+          byte[] buffer = new byte[s.available()];
+          s.read(buffer);
+          File targetFile = new File("src/main/resources/" + SpriteAtlasTexture.BLOCK_ATLAS_TEXTURE + ".png");
+          OutputStream outStream = new FileOutputStream(targetFile);
+          outStream.write(buffer);
+        } catch (IOException e) {
+          e.printStackTrace();
         }
     }
 
