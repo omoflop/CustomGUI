@@ -78,8 +78,8 @@ public class OverrideManager {
             if (id.equals(key)) {
                 GUIAnimation animation = animationOverrides.get(key);
                 Identifier[] frames = animation.frames;
-                int time = (int) (System.currentTimeMillis()/17);
-                int frame = (time/animation.frameRate) % frames.length;
+                long time = (System.currentTimeMillis()/17);
+                int frame = (int)(time/animation.frameRate) % frames.length;
                 return frames[frame];
             }
         }
